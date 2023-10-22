@@ -8,7 +8,7 @@ typedef struct
 } Trojkat;
 
 Trojkat wczytaj_trojkat();
-bool sprawdz_warunek_trojkata(Trojkat t);
+int sprawdz_warunek_trojkata(Trojkat t);
 double oblicz_polowe_obwodu(Trojkat t);
 double oblicz_pole(Trojkat t, double polowa_obwodu);
 double oblicz_promien_kola_wpisanego(double pole, double polowa_obwodu);
@@ -51,21 +51,21 @@ Trojkat wczytaj_trojkat()
     return t;
 }
 
-bool sprawdz_warunek_trojkata(Trojkat t)
+int sprawdz_warunek_trojkata(Trojkat t)
 {
     if (!(t.a + t.b > t.c))
     {
-        return false;
+        return 0;
     }
     if (!(t.a + t.c > t.b))
     {
-        return false;
+        return 0;
     }
     if (!(t.b + t.c > t.a))
     {
-        return false;
+        return 0;
     }
-    return true;
+    return 1;
 }
 
 double oblicz_polowe_obwodu(Trojkat t)

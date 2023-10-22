@@ -19,7 +19,7 @@ Prostokat wczytaj_kwadrat();
 Prostokat wczytaj_prostokat();
 Kolo wczytaj_kolo();
 
-bool sprawdz_warunek_trojkata(Trojkat t);
+int sprawdz_warunek_trojkata(Trojkat t);
 double oblicz_obwod_trojkat(Trojkat t);
 double oblicz_pole_trojkat(Trojkat t, double obwod);
 
@@ -156,21 +156,21 @@ Kolo wczytaj_kolo()
     return k;
 }
 
-bool sprawdz_warunek_trojkata(Trojkat t)
+int sprawdz_warunek_trojkata(Trojkat t)
 {
     if (!(t.a + t.b > t.c))
     {
-        return false;
+        return 0;
     }
     if (!(t.a + t.c > t.b))
     {
-        return false;
+        return 0;
     }
     if (!(t.b + t.c > t.a))
     {
-        return false;
+        return 0;
     }
-    return true;
+    return 1;
 }
 double oblicz_obwod_trojkat(Trojkat t)
 {
