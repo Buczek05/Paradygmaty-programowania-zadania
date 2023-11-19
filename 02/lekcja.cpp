@@ -1,14 +1,12 @@
 #include <stdio.h>
-
-void fun(int &k) // &k tylko w kompilatorze c++
-{
-    k = 10 * k;
-}
+#include <cstring>
 
 int main()
 {
-    int a = 10;
-    fun(a);
-    printf("%d ", a);
-    return 0;
+    int arr[20];
+    memset(arr, 0, sizeof arr);
+    for (int i = 0; i < 20; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 }
