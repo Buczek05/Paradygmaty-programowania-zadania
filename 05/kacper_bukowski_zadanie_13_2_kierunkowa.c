@@ -35,11 +35,6 @@ void delete_last_student();
 void delete_student(STUDENT *student);
 
 int main(){
-    char bufor[MAX_BUFOR];
-    struct student t[MAX];
-    int i = 0, poz = 0;
-    double max_s = 0;
-    unsigned len;
     fd = fopen("05/z_11_dane.txt", "r");
     if (fd == NULL){
         printf("Nie udalo sie otworzyc pliku\n");
