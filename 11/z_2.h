@@ -1,0 +1,14 @@
+//
+// Created by Kacper Bukowski on 16/03/2024.
+//
+
+#ifndef PARADYGMATY_PROGRAMOWANIA_ZADANIA_Z_2_H
+#define PARADYGMATY_PROGRAMOWANIA_ZADANIA_Z_2_H
+
+
+class z_2 {
+
+};
+
+
+#endif //PARADYGMATY_PROGRAMOWANIA_ZADANIA_Z_2_H

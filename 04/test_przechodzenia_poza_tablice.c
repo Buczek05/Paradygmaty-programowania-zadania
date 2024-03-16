@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 int main(){
+    short a = 32000;
+    a += a;
     double **tab_a, *tab_b;
     int n = 10, m = 5;
     tab_b = (double *)malloc(sizeof(double) * n * m );
